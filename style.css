@@ -1,16 +1,52 @@
 /* Import Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
 
 body {
+  overflow: hidden;
   background-color: #3c87ff;
 }
 
 .wrapper {
+  max-width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
   background-color: #fff;
+}
+
+.task-input {
+  height: 3rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+.task-input img {
+  position: absolute;
+  top: 50%;
+  width: 1.5rem;
+  height: auto;
+  transform: translate(16px, -50%);
+}
+.task-input input {
+  border-radius: 0.5rem;
+  border: 0.1rem solid #999;
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem 0 3rem;
+  outline: none;
+}
+.task-input input::-moz-placeholder {
+  color: lighten #999;
+}
+.task-input input:-ms-input-placeholder {
+  color: lighten #999;
+}
+.task-input input::placeholder {
+  color: lighten #999;
 }/*# sourceMappingURL=style.css.map */

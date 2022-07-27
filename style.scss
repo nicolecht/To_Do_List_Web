@@ -5,18 +5,56 @@
 // Background Colors
 $c-bg-primary: #fff;
 $c-bg-secondary: #3c87ff;
+$c-bg-third: #999;
 
-*{
+// Text Colors
+$c-tx-dafault: #000000;
+
+// CSS Properties ordered by type
+// Positioning > Desplay & Box Model > Color > Text > Other
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: $c-bg-secondary
+    overflow: hidden;
+    background-color: $c-bg-secondary;
 }
 
 .wrapper {
+    max-width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
     background-color: $c-bg-primary;
+}
+
+.task-input {
+    height: 3rem;
+    padding: 0 0.5rem;
+    position: relative;
+    
+    img {
+        position: absolute;
+        top: 50%;
+        width: 1.5rem;
+        height: auto;
+        transform: translate(16px, -50%);
+    }
+    input {
+        border-radius: 0.5rem;
+        border: 0.1rem solid $c-bg-third;
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem 0 3rem;
+        outline: none;
+    }
+    input::placeholder {
+        color: lighten $c-bg-third;
+    }
 }
