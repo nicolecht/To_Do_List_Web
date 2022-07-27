@@ -16,6 +16,7 @@ body {
 .wrapper {
   max-width: 50%;
   margin: 2rem auto;
+  padding: 0 0 1.5rem;
   border-radius: 1rem;
   background-color: #fff;
 }
@@ -74,4 +75,8 @@ body {
   color: #fff;
   background-color: #3c87ff;
   cursor: pointer;
+}
+
+.taskbox {
+  margin: 2rem 2rem;
 }/*# sourceMappingURL=style.css.map */

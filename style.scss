@@ -30,7 +30,7 @@ body {
 .wrapper {
     max-width: 50%;
     margin: 2rem auto;
-    //padding: 1rem 1rem;
+    padding: 0 0 1.5rem;
     border-radius: 1rem;
     background-color: $c-bg-primary;
 }
@@ -89,4 +89,8 @@ body {
         background-color: $c-bg-secondary;
         cursor: pointer;
     }
+}
+
+.taskbox {
+    margin: 2rem 2rem;
 }
