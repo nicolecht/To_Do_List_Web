@@ -1,7 +1,10 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-$SecondaryColor: #3c87ff;
+// COLORS
+// Background Colors
+$c-bg-primary: #fff;
+$c-bg-secondary: #3c87ff;
 
 *{
     margin: 0;
@@ -11,5 +14,9 @@ $SecondaryColor: #3c87ff;
 }
 
 body {
-    background-color: $SecondaryColor;
+    background-color: $c-bg-secondary
+}
+
+.wrapper {
+    background-color: $c-bg-primary;
 }
