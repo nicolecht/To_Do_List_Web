@@ -16,14 +16,13 @@ body {
 .wrapper {
   max-width: 50%;
   margin: 2rem auto;
-  padding: 2rem;
   border-radius: 1rem;
   background-color: #fff;
 }
 
 .task-input {
-  height: 3rem;
-  padding: 0 0.5rem;
+  height: 6rem;
+  padding: 1.5rem;
   position: relative;
 }
 .task-input img {
@@ -49,4 +48,30 @@ body {
 }
 .task-input input::placeholder {
   color: lighten #999;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid #999;
+}
+.controls .filters span {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.controls .filters span:first-child {
+  margin-left: 0;
+}
+.controls .filters span.active {
+  color: #3c87ff;
+}
+.controls .clear-btn {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.25rem 0.75rem;
+  color: #fff;
+  background-color: #3c87ff;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

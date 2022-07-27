@@ -9,6 +9,7 @@ $c-bg-third: #999;
 
 // Text Colors
 $c-tx-dafault: #000000;
+$c-tx-alternate: #fff;
 
 // CSS Properties ordered by type
 // Positioning > Desplay & Box Model > Color > Text > Other
@@ -29,14 +30,14 @@ body {
 .wrapper {
     max-width: 50%;
     margin: 2rem auto;
-    padding: 2rem;
+    //padding: 1rem 1rem;
     border-radius: 1rem;
     background-color: $c-bg-primary;
 }
 
 .task-input {
-    height: 3rem;
-    padding: 0 0.5rem;
+    height: 6rem;
+    padding: 1.5rem;
     position: relative;
     
     img {
@@ -56,5 +57,36 @@ body {
     }
     input::placeholder {
         color: lighten $c-bg-third;
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 1.5rem;
+    border-bottom: 1px solid $c-bg-third;
+
+    .filters {
+        span {
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+        span:first-child {
+            margin-left: 0;
+        }
+        span.active {
+            color: $c-bg-secondary;
+        }
+    }
+
+    .clear-btn {
+        //outline: none;
+        border: none;
+        border-radius: 0.2rem;
+        padding: 0.25rem 0.75rem;
+        color: $c-tx-alternate;
+        background-color: $c-bg-secondary;
+        cursor: pointer;
     }
 }
