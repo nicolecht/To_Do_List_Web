@@ -12,7 +12,7 @@ $c-tx-dafault: #000000;
 $c-tx-alternate: #fff;
 
 // CSS Properties ordered by type
-// Positioning > Desplay & Box Model > Color > Text > Other
+// Positioning > Display & Box Model > Color > Text > Other
 
 * {
     box-sizing: border-box;
@@ -23,14 +23,14 @@ $c-tx-alternate: #fff;
 }
 
 body {
-    overflow: hidden;
+    //overflow: hidden;
     background-color: $c-bg-secondary;
 }
 
 .wrapper {
     max-width: 50%;
     margin: 2rem auto;
-    padding: 0 0 1.5rem;
+    //padding: 0 0 1.5rem;
     border-radius: 1rem;
     background-color: $c-bg-primary;
 }
@@ -48,22 +48,25 @@ body {
         transform: translate(16px, -50%);
     }
     input {
-        border-radius: 0.5rem;
-        border: 0.1rem solid $c-bg-third;
         height: 100%;
         width: 100%;
         padding: 0 1rem 0 3rem;
+        border: 0.1rem solid $c-bg-third;
+        border-radius: 0.5rem;
         outline: none;
     }
     input::placeholder {
-        color: lighten $c-bg-third;
+        color: darken($c-bg-third, 0%);
     }
 }
 
-.controls {
+.controls, li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.controls {
     padding: 0 1.5rem 1.5rem;
     border-bottom: 1px solid $c-bg-third;
 
@@ -81,10 +84,10 @@ body {
     }
 
     .clear-btn {
-        //outline: none;
-        border: none;
-        border-radius: 0.2rem;
         padding: 0.25rem 0.75rem;
+        border: none;
+        border-radius: 0.5rem;
+        //outline: none;
         color: $c-tx-alternate;
         background-color: $c-bg-secondary;
         cursor: pointer;
@@ -92,5 +95,68 @@ body {
 }
 
 .taskbox {
-    margin: 2rem 2rem;
+    margin: 1.5rem 1.5rem;
+    padding: 0 0 1.5rem 0;
+
+    .task {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $c-bg-third;
+        list-style: none;
+
+        label {
+            display: flex;
+
+            input {
+                margin: 0 0.5rem 0 0;
+            }
+        }
+
+        .settings {
+            position: relative;
+            cursor: pointer;
+
+            .task-menu {
+                position: absolute;
+                z-index: 2;
+                right: -0.5rem;
+                bottom: -3rem;
+                padding: 0.5rem 0;
+                border-radius: 0.5rem;
+                background-color: $c-bg-primary;
+                box-shadow: 0 0 0.2rem $c-bg-third;
+                transform: scale(0);
+                transform-origin: top right;
+                transition: transform 0.2s ease;
+
+                li {
+                    justify-content: flex-start;
+                    height: 1.5rem;
+                    margin-bottom: 0.2rem;
+                    padding: 0.5rem;
+
+                    i {
+                        padding-right: 0.5rem;
+                    }
+                }
+
+                li:hover {
+                    background-color: lighten($c-bg-third, 37%);
+                }
+
+                li:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .settings:hover .task-menu {
+            transform: scale(1);
+        } 
+    }
+
+    .task:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
 }
