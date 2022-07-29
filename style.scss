@@ -110,6 +110,10 @@ body {
             input {
                 margin: 0 0.5rem 0 0;
             }
+
+            p.checked {
+                text-decoration: line-through;
+            }
         }
 
         .settings {
@@ -149,7 +153,7 @@ body {
                 }
             }
         }
-        .settings:hover .task-menu {
+        .settings .task-menu.show {
             transform: scale(1);
         } 
     }

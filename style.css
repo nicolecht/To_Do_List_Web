@@ -94,6 +94,9 @@ body {
 .taskbox .task label input {
   margin: 0 0.5rem 0 0;
 }
+.taskbox .task label p.checked {
+  text-decoration: line-through;
+}
 .taskbox .task .settings {
   position: relative;
   cursor: pointer;
@@ -126,7 +129,7 @@ body {
 .taskbox .task .settings .task-menu li:last-child {
   margin-bottom: 0;
 }
-.taskbox .task .settings:hover .task-menu {
+.taskbox .task .settings .task-menu.show {
   transform: scale(1);
 }
 .taskbox .task:last-child {
