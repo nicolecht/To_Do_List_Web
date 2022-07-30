@@ -32,3 +32,4 @@ New Methods:
 Improved knowledge:
 1. more organized SCSS
 2. proper naming of html elements and classes
+3. better usage of classList in JS
