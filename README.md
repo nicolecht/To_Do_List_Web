@@ -26,7 +26,7 @@ New Methods:
 6. focus()
 7. splice
 8. localStorage.setItem - save to storage
-9. localStorage.getItem - retrive from storage
+9. localStorage.getItem - retrieve from storage
 10. trim()
 
 Improved knowledge:
