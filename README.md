@@ -1,7 +1,5 @@
 To do list with local storage
 
-<img src="To_do_list_web_example.jpg" width="300" height="250">
-
 Level: Beginner
 
 Completion Timeline: 27 July 2022 to 30 July 2022 (4 days)
