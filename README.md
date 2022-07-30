@@ -14,7 +14,8 @@ New knowledge:
 1. Iconscout for Icons
 2. Import Google Fonts
 3. Using first and last child elements to align CSS properly
-4. Local Storage - store data locally within the user's browser with no expiration date.
+4. Using first and last child elements to edit code line in JS
+5. Local Storage - store data locally within the user's browser with no expiration date.
 
 New Methods:
 1. querySelectorAll
