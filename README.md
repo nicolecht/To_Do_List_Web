@@ -9,6 +9,7 @@ Referenced from:
 https://www.youtube.com/watch?v=2QIMUBilooc&ab_channel=CodingNepal
 
 What I've learnt from this project:
+
 New knowledge:
 1. Iconscout for Icons
 2. Import Google Fonts
