@@ -1,6 +1,6 @@
 To do list with local storage
 
-<img src="To_do_list_web_example.jpg" width="300" height="200">
+<img src="To_do_list_web_example.jpg" width="300" height="250">
 
 Level: Beginner
 
