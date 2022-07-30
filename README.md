@@ -1,6 +1,6 @@
 To do list with local storage
 
-![Photo Example](To_do_list_web_example.jpg | width=100)
+![Photo Example](To_do_list_web_example.jpg | width=100px)
 
 Level: Beginner
 
